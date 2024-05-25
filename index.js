@@ -1,8 +1,10 @@
+require('dotenv').config();
 import { Server } from 'socket.io';
+const PORT = process.env.PORT || 4000;
 
-const io = new Server(9000, {
+const io = new Server(PORT, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: '*',
     }, 
 })
 
