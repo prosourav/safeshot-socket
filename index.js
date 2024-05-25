@@ -1,5 +1,7 @@
-require('dotenv').config();
+import { config } from 'dotenv';
 import { Server } from 'socket.io';
+config();
+
 const PORT = process.env.PORT || 4000;
 
 const io = new Server(PORT, {
