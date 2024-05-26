@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 4000;
 
 const io = new Server(PORT, {
     cors: {
-        origin: 'https://vaccine-portal-client-du27u7fn8-prosouravs-projects.vercel.app',
+        origin: 'https://vaccine-portal-client.vercel.app',
     }, 
 })
 
